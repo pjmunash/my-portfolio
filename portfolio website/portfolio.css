@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    align-items:center;
+    background-image:url(portfolio\ background.jpg);
+    flex-wrap: wrap;
+}
+p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+img{
+    display: flex;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 2em;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 70em;
+    margin-top: 2em;
+
+}
+#contacts{
+    color: rgb(47, 235, 0);
+    margin-top: 1em;
+}
+nav{
+    display: flex;
+    float: right;
+    flex-direction: i;
+    color: aqua;
+
+
+}
+
+
+#name{
+    display: flex;
+    flex-direction: initial;
+    color: rgb(0, 255, 136);
+
+    
+    
+}
+.heading{
+    display: flex;
+    size: 3em;
+    color: rgb(173, 173, 173);
+    margin-top: 1em;
+    border: solid 2px;
+    border-radius: 1em;
+    align-items: center;
+    padding: 4px;
+    width: 70em;
+    justify-items:flex-start;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+svg:hover{
+    color: rgb(7, 57, 150);
+}
+svg{
+    border: 1px solid;
+    border-radius: 1em;
+    background-color: rgb(11, 67, 116);
+}
+svg:hover{
+    background-color: blanchedalmond;
+}
+.card{
+    width: 300px;
+    display: flex;
+    border: solid rgb(164, 197, 169);
+    border-radius: 1em;
+    background-color:rgb(73, 104, 94);
+    position: relative;
+    margin-left: 4px;
+    padding: 4px;
+    flex-direction: inherit;
+    color: beige;
+    
+    
+}
+.card-t{
+    width: 300px;
+    display: flex;
+    border: solid rgb(164, 196, 168);
+    border-radius: 1em;
+    background-color:rgb(73,104,94) ;
+
+    bottom:  165px;
+    margin-left: 4px;
+    padding: 4px;
+    flex-direction: inherit;
+    color: beige;
+}
+.card-v{
+    width: 300px;
+    display: flex;
+    border: solid rgb(164, 204, 169);
+    border-radius: 1em;
+    background-color:rgb(73, 104, 94);
+    position: relative;
+    
+    margin-left: 4px;
+    padding: 4px;
+    flex-direction: inherit;
+    color: beige;
+    
+}
+.card-header{
+    color: rgb(69, 69, 165);
+    border-bottom: solid ;
+    border-radius: 1em;
+    background-color: rgb(187, 183, 183);
+    position:relative;
+    margin-right: 3px;
+    padding: 4px;
+    height: 20px;
+    
+}
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:transparent;
+    width: 1300px;
+    height: 350px;
+}
+.card-v:hover{
+    background-color: rgb(31, 31, 11);
+}
+.card:hover{
+    background-color: rgb(31, 31, 11);
+}.card-t:hover{
+    background-color: rgb(31, 31, 11);
+}

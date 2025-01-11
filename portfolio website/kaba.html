@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabarak University Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #a53232; /* Kabarak red */
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: #cf2525;
+      background-color: #161313;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar .logo img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .sidebar .logo h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      color: #1493ce; /* Highlighted blue */
+    }
+
+    .sidebar ul li i {
+      margin-right: 10px;
+    }
+
+    /* Main Content */
+    .main {
+      flex: 1;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #47a447; /* Green */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .navbar .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+
+    .navbar .search-bar input {
+      border: none;
+      background: transparent;
+      color: white;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .navbar .search-bar input::placeholder {
+      color: white;
+    }
+
+    .navbar .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .profile img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      background-color: #e0b35e; /* Gold */
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .card table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .card table th, .card table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .card table th {
+      background-color: #f2f2f2;
+    }
+
+    .button {
+      background-color: #ff4d4d; /* Red */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #ff6666; /* Lighter red */
+    }
+
+    #jp {
+      color: #1493ce;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="kaba.jpg" alt="Kabarak Logo">
+      <h2>KABARAK UNIVERSITY</h2>
+    </div>
+    <ul>
+      <li id="jp">DASHBOARD</li>
+      <li>Personal Profile</li>
+      <li id="jp">ACADEMICS</li>
+      <ul>
+        <li>Course Registration</li>
+        <li>Academic Requisition</li>
+        <li>Course Evaluation</li>
+      </ul>
+      <li id="jp">FINANCIALS</li>
+      <ul>
+        <li>Fee Statement</li>
+        <li>Receipts</li>
+        <li>Fee Structure</li>
+        <li>Legacy Statement</li>
+      </ul>
+      <li id="jp">ACCOMODATION</li>
+      <ul>
+        <li>Hostel Booking</li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="navbar">
+      <h2>Dashboard</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="search">
+      </div>
+      <div class="profile">
+        <img src="dv passport (2).jpg" alt="Profile Picture">
+        <span>KABAIYA JOHN PETER</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="row">
+        <div class="card">
+          <h3>Academic Information</h3>
+          <p><strong>Current Programme:</strong> Bachelor of Science in Information Technology</p>
+          <p><strong>Attempted Units:</strong> 21</p>
+          <p><strong>Registered Units:</strong> 0</p>
+        </div>
+
+        <div class="card">
+          <h3>Fee Payment</h3>
+          <p><strong>Total Billed:</strong> <span style="color: rgb(179, 192, 59);">0.00</span> </p>
+          <p><strong>Total Paid:</strong>  <span style="color: rgb(179, 192, 59);">0.00</span></p>
+          <p><strong>Fee Balance:</strong> <span style="color: rgb(179, 192, 59);">55,000.00</span></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Important Documents</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>File Name</th>
+              <th>Remarks</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Library and Information Services Policy-2</td>
+              <td></td>
+              <td><button class="button">View Document</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
